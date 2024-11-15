@@ -1,0 +1,31 @@
+<form [formGroup]="loginForm">
+    <h1 class="field grid bg-primary p-4 text-center">Journey Of Life</h1>
+    <div class="flex flex-wrap justify-content-center">
+
+    <div class="border-dashed lg:border-solid border-primary-500 border-3 border-primary-300 w-25rem h-15rem p-5 m-2 text-center align-items-center surface-overlay text-bold">
+
+
+    <!-- Username -->
+    <div class="field grid">
+        <label for="firstname3" class="col-fixed text-center" style="width:100px">Username</label>
+        <div class="col">
+            <input id="firstname3" type="text"
+                class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary" formControlName="userName">
+        </div>
+    </div>
+    <!-- password -->
+    <div class="field grid">
+        <label for="lastname3" class="col-fixed" style="width:100px">password</label>
+        <div class="col">
+            <input id="lastname3" type="text"
+                class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary" formControlName="password">
+        </div>
+    </div>
+    <div class="block  font-bold  p-2 border-round mb-3">
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()">submit</button>
+    </div>
+    </div>
+    </div>
+</form>
+
+
